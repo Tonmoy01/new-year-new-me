@@ -1,0 +1,340 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+}
+
+/**************** HERO SECTION ****************/
+#hero-section {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-image: url('../images/banner/banner2.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#hero-section .hero-content {
+  position: absolute;
+  width: 35%;
+  top: 25%;
+  right: 15%;
+  text-align: right;
+}
+
+.hero-content .hero-heading {
+  font-weight: 700;
+  font-size: 65px;
+  line-height: 76px;
+  color: #151414;
+}
+
+.lead {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #444343;
+  padding: 30px 0;
+}
+
+.hero-content .primary-btn {
+  width: 160px;
+  height: 64px;
+  background: #f15b22;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  font-weight: 600;
+  font-size: 20px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+/**************** ABOUT SECTION ****************/
+#about-section {
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 0px;
+}
+
+#about-section .about-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10%;
+}
+
+.about-container .about-left {
+  position: relative;
+  width: 100%;
+}
+
+.about-container .about-right {
+  width: 100%;
+}
+
+.about-container .about-left .bg-color {
+  position: absolute;
+  background: #fcded3;
+  height: 450px;
+  width: 450px;
+  z-index: -999;
+  top: 151px;
+  left: 4%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.about-container .about-left img {
+  width: 485px;
+  height: 600px;
+}
+
+.about-container .about-right .about-heading {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  color: #151414;
+}
+
+.about-container .about-right ul.list-items {
+  list-style: none;
+}
+
+.about-container .about-right ul.list-items li.list-item {
+  padding-bottom: 10px;
+}
+
+.about-container .about-right ul.list-items li.list-item i {
+  margin-right: 10px;
+  color: #16d886;
+  font-size: 20px;
+}
+
+/**************** MY PLANS SECTION ****************/
+#my-plans-section {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 80px;
+}
+
+#my-plans-section .plans-heading {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  text-align: center;
+  color: #151414;
+  padding: 50px 0px;
+}
+
+#my-plans-section .plans-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  text-align: center;
+}
+
+.plans-container .plan-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 35px;
+  color: #151414;
+  padding: 16px 0px;
+}
+
+.plans-container .plan-lead {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 29px;
+  color: #737272;
+}
+
+/**************** TESTIMONIAL SECTION ****************/
+#testimonial-section {
+  width: 80%;
+  height: 450px;
+  margin-bottom: 100px;
+  margin: 0 auto;
+}
+
+#testimonial-section .testimonial-heading {
+  text-align: center;
+  margin: 60px 0px 40px 0px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  color: #151414;
+}
+
+#testimonial-section .testimonial-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.testimonial-container .item img {
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.testimonial-container .testimonial-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 35px;
+  color: #151414;
+  padding: 16px 0px;
+}
+
+.testimonial-container .testimonial-lead {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 29px;
+  color: #737272;
+}
+
+.testimonial-container .item:nth-child(1),
+.testimonial-container .item:nth-child(3) {
+  margin-top: -20px;
+}
+
+.testimonial-container .item:nth-child(2) {
+  margin-top: 20px;
+}
+
+/**************** CONTACT SECTION ****************/
+.contact-container {
+  width: 80%;
+  height: 350px;
+  margin: 0 auto;
+  background: linear-gradient(90deg, #f15b22 0%, rgba(241, 91, 34, 0) 100%),
+    url('/images/watch.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 100px;
+  border-radius: 8px;
+}
+
+.contact-content {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 100px;
+}
+
+.contact-container .contact-content .contact-title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  color: #ffffff;
+}
+
+.contact-container .contact-content .contact-btn {
+  width: max-content;
+  font-size: 16px;
+  font-weight: bold;
+  color: #f15b22;
+  margin-top: 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 15px 25px;
+}
+
+/**************** FOOTER SECTION ****************/
+#footer-section {
+  padding: 80px 95px;
+  background: #151414;
+  color: #fff;
+  margin: 0 auto;
+}
+
+#footer-section .footer-container {
+  width: 80%;
+  display: flex;
+  gap: 12%;
+  margin: 0 auto;
+}
+
+/* FOOTER LEFT */
+.footer-container .footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.footer-container .footer-left .footer-item {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #ffffff;
+}
+
+.footer-container .footer-left .social-media-icon img {
+  padding-right: 10px;
+}
+
+/* FOOTER RIGHT */
+.footer-container .footer-right .email-title {
+  font-weight: 600;
+  font-size: 25px;
+  color: #ffffff;
+  padding-bottom: 31px;
+}
+
+.footer-container .footer-right input {
+  padding: 15px;
+  border: 1px solid #fff;
+  background: #151414;
+  width: 350px;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+
+.footer-container .footer-right input:focus {
+  outline: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+.footer-container .footer-right .subscribe-btn {
+  width: 100px;
+  height: 50px;
+  margin-top: 16px;
+  cursor: pointer;
+  background-color: #fff;
+  color: #f15b22;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
